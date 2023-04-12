@@ -1,6 +1,8 @@
-  table {
+  table, td {
     border-style: solid;
+    border: 1px solid #333;
   }
   body {
     border-style: solid;
+    padding: 5px;
   }

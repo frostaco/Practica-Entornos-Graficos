@@ -4,21 +4,26 @@
         <link href="estilos.css" rel="stylesheet">
     </head>
     <body>
-        <h1>a veces</h1>
+        <a href="https://www.frro.utn.edu.ar/"><img src="logoutn.jpeg" alt="logo utn"></a>
         <hr>
         <h1><strong>AÑO 2008</strong></h1>
         <br>
+        
         <table>
-            <tr>
-                <th>Examenes</th>
-            </tr>
-            <tr>
-                <td>
-                    Fecha:
-                </td>
-                <td>Aprobados</td>
-                
-            </tr>
+            <thead>
+                <tr>
+                    <th colspan="2" align="right">Examenes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Fecha: 10/4/2022</td>
+                    <td>Aprobados</td>          
+                </tr>
+                <tr>
+                    <td>24/30</td>
+                </tr>
+            </tbody>
         </table>
         <ol>
             <li><a href="enunciado">Enunciado del examen</a></li>
@@ -29,9 +34,11 @@
         <br>
         <p>Puede realizar consultas completando el siguiente formulario:</p>
         <br>
-        <form>
-            <p>Email: <input type="text"></p>
-            <p>Consulta: <input type="text"></p>
+        <form id="form1" name="formularioconsulta" action="mailto:xx@xx.com" enctype="text/plain" method="post">
+            <textarea placeholder="Escriba aqui su Email"></textarea>
+            <br>
+            <textarea placeholder="Escriba aqui su consulta" rows="4" cols="50"></textarea>
+            <br>
             <input type="submit" value="Enviar">
             <input type="submit" value="Borrar">
         </form>
@@ -40,10 +47,7 @@
         <br>
         <h2>Enunciado del examen</h2>
         <p>Ejercicio 1:............</p>
-        <br>
         <p>Ejercicio 2:............</p>
-        <br>
-        <br>
         <p>Para mas informacion dirigirse a <a href="contacto@xx.com">contacto@xx.com</a></p>
     </body>
 </html>
