@@ -1,0 +1,24 @@
+1. ¿Ventajas de HTML5?
+
+    Soporte para multimedia: HTML5 permite la integración de audio y video en las páginas web sin necesidad de plugins externos como Flash.
+    
+    Estructura semántica: HTML5 introduce nuevos elementos semánticos que ayudan a los motores de búsqueda a entender mejor el contenido de una página web.
+    
+    Interactividad: HTML5 ofrece nuevas API que permiten la creación de aplicaciones web interactivas.
+    
+    Mejoras en la accesibilidad: HTML5 introduce nuevas etiquetas y atributos que mejoran la accesibilidad de las páginas web.
+
+    Flexibilidad: HTML5 es compatible con dispositivos móviles, lo que significa que las páginas web creadas con HTML5 se adaptan automáticamente a diferentes tamaños de pantalla.
+    
+    Mantenimiento: HTML5 tiene una sintaxis más simple y limpia en comparación con las versiones anteriores de HTML, lo que facilita el mantenimiento.
+
+    etc.
+
+2. ¿Por qué utilizarlo?
+
+    Muchas de las razones estan enumeradas en la primera respuesta, pero la mayor razon es la capacidad de renderizar graficos en cualquier navegador, y incrustar audio y video online sin plugin.
+
+3. Nombre ventajas
+
+    Mismas que respuesta 1.
+
