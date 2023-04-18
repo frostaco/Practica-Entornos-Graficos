@@ -1,0 +1,125 @@
+1. ¿ Qué es CSS y para qué se usa?
+
+    CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
+    Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML.
+    CSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación de este, características tales como las capas o layouts, los colores y las fuentes.
+    Esta separación busca mejorar la accesibilidad del documento, proveer más flexibilidad y control en la especificación de características presentacionales, permitir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+    Compatibilidad hacia atrás y hacia adelante. Las aplicaciones del usuario CSS2 serán capaces de entender las hojas de estilo CSS1. Las aplicaciones del usuario CSS1 podrán leer las hojas de estilo CSS2 y descartar las partes que no entienden. Además, las aplicaciones del usuario que no soporten CSS serán capaces de mostrar los documentos estilísticamente mejorados. Por supuesto, el efectos estilísticos hechos posible por CSS no serán procesados, pero todo el contenido será presentado.
+
+    Complementariedad con documentos estructurados. Las hojas de estilo complementan los documentos estructurados (ej., HTML y aplicaciones XML) proveyendo información estilística del texto marcado. Debe ser fácil cambiar la hoja de estilo con poco o ningún impacto en el sistema de marcas.
+
+    Independencia del vendedor, la plataforma y el dispositivo. Las hojas de estilo permiten a los documentos permanecer independientes del vendedor, la plataforma y el dispositivo. Las mismas hojas de estilo son también independientes del vendedor y la plataforma, pero CSS2 permite dirigir una hoja de estilo a un grupo de dispositivos (ej., impresoras).
+
+    Mantenibilidad. Apuntando a una hoja de estilo desde los documentos, los responsables de los sitios en la Web pueden simplificar el mantenimiento y conservar un estilo y un efecto consistente a todo lo largo del sitio. Por ejemplo, si el color del fondo de las páginas de una organización cambia, sólo un archivo necesita ser cambiado.
+
+    Simplicidad. CSS2 es más compleja que CSS1, pero sigue siendo un lenguaje de estilo simple que es humanamente legible y posible de escribir. Las propiedades CSS se mantienen independientes unas de otras en la medida de lo posible y generalmente sólo hay un modo de conseguir un efecto determinado.
+
+    Rendimiento de la red. CSS proporciona una compacta codificación para presentar los contenidos. Comparado con los archivos de imágenes o de audio que son usados frecuentemente por los autores para conseguir ciertos efectos en el procesamiento, las hojas de estilo, la mayoría de las veces, disminuyen el tamaño del contenido. Además, menos conexiones de la red tienen que ser abiertas, lo cual ayuda a incrementar el rendimiento de la red.
+
+    Flexibilidad. Las CSS pueden ser aplicadas al contenido de varias maneras. La característica clave es la capacidad de formar una cascada de estilos con la información especificada en la hoja de estilo predeterminada (aplicación del usuario), las hojas de estilo del usuario, las hojas de estilo vinculadas, el encabezamiento del documento y en los atributos de los elementos que forman el cuerpo del documento.
+
+    Riqueza. Proporcionando a los autores un abundante juego de efectos de procesamiento, aumenta la riqueza de la Web como medio de expresión. Los diseñadores han estado ambicionando la funcionalidad comúnmente encontrada en los programas de edición y de presentaciones gráficas. Algunos de los efectos requeridos entran en conflicto con la independencia del dispositivo, pero CSS2 llega muy lejos satisfaciendo las demandas de los diseñadores.
+
+    Combinación con lenguajes alternativos. El juego de propiedades de CSS descriptas en esta especificación conforman un sólido modelo de aplicación de formatos para presentaciones visuales y auditivas. Este modelo puede ser accedido mediante el lenguaje CSS, pero la combinación con otros lenguajes también es posible. Por ejemplo, un programa en JavaScript puede cambiar dinámicamente el valor de la propiedad 'color' de un determinado elemento.
+
+    Accesibilidad. Varias características de CSS harán a la Web más accesible para los usuarios con discapacidades
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+
+    CSS en línea
+    Los estilos en línea son declaraciones CSS que se integran en las etiquetas HTML mediante el atributo style. Este método solo afecta al elemento en el que se integra el código.
+
+    CSS incrustado en la cabecera
+    Otra manera muy simple de añadir estilo con CSS es utilizando la etiqueta <style> en la cabecera <head> del fichero HTML del sitio.
+
+    CSS en hojas de estilo externas
+    Mediante hojas de estilo externas se consigue separar el archivo de estilos del fichero HTML. El archivo de estilos cuenta con la extensión .css y se referencia desde HTML mediante el elemento <link>. 
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+
+    Selector universal
+    El asterisco (*) es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.
+
+    * {
+        color: orange;
+    }
+
+    Selector de tipo
+    Un selector de tipo permite seleccionar todos los elementos en HTML que tienen un nombre de nodo común.
+
+    a {
+        background-color: green;
+    }
+
+    Selector de clase
+    Los selectores de clase permiten seleccionar todos los elementos que tienen un mismo nombre de clase.
+
+    .clase {
+        color: orange;
+    }
+
+    Selector de ID
+    Un selector de ID está diseñado para seleccionar elementos con base en su atributo de ID.
+
+    #id {
+        color: orange;
+    }
+
+    Selector de atributo
+    Los selectores de atributo están hechos para seleccionar todos los elementos que correspondan a un atributo específico o a un valor de atributo definido.
+
+    a[href] {
+        color: orange;
+    }
+
+    Selector de pseudo-clase
+    Un selector de pseudo-clase permite aplicar CSS a una selección de elementos o a elementos que se encuentran en un estado específico.
+
+    a:hover {
+        color: green;
+    }
+
+    Combinadores
+    Combina otros selectores con el fin de delimitar elementos en el documento.
+
+    article > p { 
+
+    }
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+    Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
+    
+    :hover aplicará un estilo cuando el usuario pose el mouse sobre el elemento especificado por el selector.
+    :link permite especificar el aspecto de los enlaces que todavía no han sido visitados.
+    :visited permite especificar el aspecto de los enlaces que sí han sido visitados.
+    :active permite especificar el aspecto de un elemento cuando se hace clic sobre él.
+    :focus permite especificar el aspecto de un elemento cuando este tiene el foco.
+
+6. ¿ Qué es la herencia?
+
+    La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten a sus hijos.
+    No todas las propiedades CSS son heredadas, porque algunas de ellas no tendría sentido que lo fueran. 
+    Por ejemplo, los márgenes no se heredan porque es poco probable que un elemento hijo necesite los mismos márgenes que su padre.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+    La cascada soluciona los conflictos cuando varias declaraciones afectan a un elemento determinado. 
+    Las declaraciones importantes anulan a las que no lo son tanto. 
+    Entre declaraciones de igual importancia, la especificidad de la regla controla cuál se aplica. 
+    Y, si todas las demás son iguales, el orden de las fuentes supone la distinción definitiva.
+
+    Se aplican en este orden:
+
+        Hoja de estilos de agente de usuario.
+
+        Declaraciones normales en hojas de estilo de usuario.
+
+        Declaraciones normales en hojas de estilo de autor.
+
+        Declaraciones importantes en hojas de estilo de autor.
+
+        Declaraciones importantes en hojas de estilo de usuario.
