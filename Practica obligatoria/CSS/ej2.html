@@ -1,0 +1,37 @@
+<!--Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.-->
+
+<head>
+  <style>
+    p#normal {
+        font-family: arial,helvetica;
+        font-size: 11px;
+        font-weight: bold;
+        }
+    /* Para el parrafo de id: normal se le aplica:
+        font-family: especifica un numero de fuentes a usar, con mayor a menor prioridad.
+        font-size: especifica el tamaño de la fuente, en este caso en pixeles.
+        font-weight: especifica que tan gruesa es la fuente, en este caso en negrita.*/
+    *#destacado {
+        border-style: solid;
+        border-color: blue;
+        border-width: 2px;
+        }
+    /* Para el elemento con id: destacado se aplica:
+        border-style: solid añade un borde solido
+        border-color: especifica el color de dicho borde
+        border-width: especifica el ancho del borde (2px)*/
+    #distinto {
+        background-color: #9EC7EB;
+        color: red;
+        }
+    /* Para el elemento con id: distinto se aplica:
+        background-color: elige el color de fondo
+        color: indica el color del elemento*/      
+  </style>  
+</head>
+<body>
+     <p id="normal">Este es un párrafo</p>
+     <p id="destacado">Este es otro párrafo</p>
+     <table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+     <p id="distinto">Este es el último párrafo</p>
+</body>
