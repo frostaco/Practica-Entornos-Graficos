@@ -1,0 +1,33 @@
+strong{
+    color:red
+}
+
+div p *[href]{
+    color: black;
+}
+
+#ultimo ul{
+    color:yellow
+}
+#ultimo ul a{
+    color: blue;
+}
+
+#importante{
+    color: green;
+}
+#importante h1{
+    color: red;
+}
+
+h1[title]{
+    color: blue;
+}
+
+ol a{
+    color: blue;
+}
+a:visited{
+    color: violet;
+    text-decoration: none;
+}
