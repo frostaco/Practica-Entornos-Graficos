@@ -1,0 +1,8 @@
+a)
+    El primer array arroja como resultado 'bar 1', es un array simple.
+
+b)
+    El segundo array da por pantalla: 5 9 42, es un array dentro de otro array.
+
+c)
+    El tercer array no tiene salida, ya que el ultimo 'unset' elimina el array entero.

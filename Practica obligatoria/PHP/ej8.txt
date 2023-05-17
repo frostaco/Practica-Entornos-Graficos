@@ -1,0 +1,6 @@
+a)
+    El codigo utiliza la funcion getdate para tomar la hora de la maquina y usando [hours], [minutes]
+    y [seconds] puede mostrar la hora, de la misma manera [mday] [mon] y [year] toma la fecha.
+
+b)
+    Es una funcion simple que toma dos numeros y los suma, luego los entrega como salida.

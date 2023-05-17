@@ -1,0 +1,12 @@
+a)
+
+    Los tres codigos son equivalentes, las diferencias radican en que los primeros dos suman a la variable luego de mostrarla,
+    mientras que el tercero lo hace antes de mostrarla.
+
+b)
+
+    Aca tambien los tres codigos son equivalentes, todos utilizan la misma estructura y llegan al mismo resultado pero de diferentes maneras.
+
+c)
+
+    Por ultimo los dos codigos son equivalentes, el primero utiliza un if y elseif mientras que el segundo utiliza switch y cases.

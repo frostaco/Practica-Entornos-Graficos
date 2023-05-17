@@ -1,0 +1,18 @@
+Si el archivo datos.php contiene el código que sigue:
+
+<?php
+$color = 'blanco';
+$flor = 'clavel';
+?>
+
+Indicar las salidas que produce el siguiente código.
+
+<?php
+echo "El $flor $color \n";
+include 'datos.php';
+echo " El $flor $color";
+?> 
+
+a)
+    Ya que el codigo incluye al archivo datos luego del primer echo, retornara un error
+    El segundo echo mostraria, "El clavel blanco".
