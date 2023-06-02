@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendar</title>
+</head>
+<body>
+    <h1>Recomenda el sitio a un amigo!</h1>
+    <form action="enviar_consulta.php" method="POST">
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="e_amigo">Email de tu amigo</label>
+        <input type="email" id="e_amigo" name="e_amigo" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
